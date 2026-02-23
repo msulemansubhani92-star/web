@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-between;
+        }
+
+        /* Top Navigation */
+        .top-nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 20px;
+        }
+
+        .top-nav a {
+            text-decoration: none;
+            color: #000;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+        .top-nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Section */
+        .main {
+            text-align: center;
+            margin-top: -80px;
+        }
+
+        .logo {
+            font-size: 90px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo span:nth-child(1) { color: #4285F4; }
+        .logo span:nth-child(2) { color: #DB4437; }
+        .logo span:nth-child(3) { color: #F4B400; }
+        .logo span:nth-child(4) { color: #4285F4; }
+        .logo span:nth-child(5) { color: #0F9D58; }
+        .logo span:nth-child(6) { color: #DB4437; }
+
+        .search-box {
+            margin-top: 20px;
+        }
+
+        .search-box input {
+            width: 500px;
+            max-width: 90%;
+            padding: 12px 20px;
+            border-radius: 25px;
+            border: 1px solid #dcdcdc;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .search-box input:hover,
+        .search-box input:focus {
+            box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .buttons input {
+            padding: 10px 20px;
+            margin: 5px;
+            border: 1px solid #f2f2f2;
+            background-color: #f8f9fa;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .buttons input:hover {
+            border: 1px solid #c6c6c6;
+        }
+
+        /* Footer */
+        footer {
+            background: #f2f2f2;
+            padding: 15px 30px;
+            font-size: 14px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-links div a {
+            text-decoration: none;
+            color: #5f6368;
+            margin-right: 15px;
+        }
+
+        .footer-links div a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 60px;
+            }
+
+            .search-box input {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main">
+        <div class="logo">
+            <span>G</span><span>o</span><span>o</span>
+            <span>g</span><span>l</span><span>e</span>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search Google or type a URL">
+        </div>
+
+        <div class="buttons">
+            <input type="button" value="Google Search">
+            <input type="button" value="I'm Feeling Lucky">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <div>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
